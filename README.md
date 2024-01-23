@@ -15,7 +15,7 @@ the immediate neighbouring cells. The neighbouring cells must be tested because 
 
 | Timer / simulation step [ms]     | # Particles | Size of hash table [x*y] |
 | ----------- | ----------- | ----------- |
-| Header      | Title       | Title       |
+| ~6      | 1000       | Initial implementation, without hash table       |
 | Paragraph   | Text        | Text        |
 
 Timer / simulation step [ms]	# Particles	Size of hash table [x*y]
