@@ -13,14 +13,19 @@ The idea is now to use a data structure that manages the particles according to 
 The **two-dimensional hash table corresponds to a two-dimensional grid**: each particle is assigned to a grid cell according to its position. This allows collision detection to be made more efficient by only analysing each particle for collisions in its own grid cell and the immediate neighbouring cells. The neighbouring cells must be tested because particles have a certain size and can overlap with the neighbouring cells. After each simulation step, the particles must be removed from the hash table according to their new position and re-entered in the correct cell.
 
 
-## Speed test & conclusion ##
+## Speed test* & conclusion ##
 
 | Timer / simulation step [ms]     | # Particles | Size of hash table [x*y] |
 | ------- | -------------- | ---------------------------------------------- |
 | ~6      | 1000           | Initial implementation, without hash table     |
 | 0.31	  | 1000	         | 100*100                                        |
-| 1.28	  | 100	           | 100*100                                        |
-| 3.24	  | 1000	         | 10*10                                          |
+| 1.28	  | 100	           | 100*100                                  (a)   |
+| 3.24	  | 1000	         | 10*10                                    (b)   |
 | 0.09	  | 100	           | 10*10                                          |
 
-Made on a 12year old Lenovo x201 with 8GB RAM.
+**Findings:**
+Distributing the particles as evenly as possible across the hash table leads to good performance.
+Approximately one particle per bucket is probably an ideal size. Hash tables that are too small lead to lists that have to be iterated.
+We see a hash table that is too small in measurement / setting (b) and a hash table that is too large in measurement / setting (a)
+
+* Made on a 12year old Lenovo x201 with 8GB RAM.
