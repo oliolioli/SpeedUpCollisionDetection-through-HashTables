@@ -19,13 +19,13 @@ The **two-dimensional hash table corresponds to a two-dimensional grid**: each p
 | ------- | -------------- | ---------------------------------------------- |
 | ~6      | 1000           | Initial implementation, without hash table     |
 | 0.31	  | 1000	         | 100*100                                        |
-| 1.28	  | 100	           | 100*100                                  (a)   |
+| 1.28	  | 100	           | 100*100                                  (c)   |
 | 3.24	  | 1000	         | 10*10                                    (b)   |
-| 0.09	  | 100	           | 10*10                                          |
+| 0.09	  | 100	           | 10*10                                    (a)   |
 
 **Findings:**
 Distributing the particles as evenly as possible across the hash table leads to good performance.
-Approximately one particle per bucket is probably an ideal size. Hash tables that are too small lead to lists that have to be iterated.
-We see a hash table that is too small in measurement / setting (b) and a hash table that is too large in measurement / setting (a)
+Approximately one particle per bucket is probably an ideal size (c). Hash tables that are too small lead to lists that have to be iterated.
+We see a hash table that is too small in measurement / setting (b) and a hash table that is too large in measurement / setting (c)
 
 * Made on a 12year old Lenovo x201 with 8GB RAM.
