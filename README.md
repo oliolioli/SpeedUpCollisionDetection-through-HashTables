@@ -9,3 +9,14 @@ The idea is now to use a data structure that manages the particles according to 
 
 The two-dimensional hash table corresponds to a two-dimensional grid: each particle is assigned to a grid cell according to its position. This allows collision detection to be made more efficient by only analysing each particle for collisions in its own grid cell and the immediate neighbouring cells.
 the immediate neighbouring cells. The neighbouring cells must be tested because particles have a certain size and can overlap with the neighbouring cells. After each simulation step, the particles must be removed from the hash table according to their new position and re-entered in the correct cell.
+
+
+## Speed test & conclusion ##
+
+Timer per simulation step [ms]	Anzahl Partikel	Grösse der Hashtabelle [x*y]
+~6	1000	- Originalimplementation, ohne Hashtabelle -
+0.31	1000	100*100
+1.28	100	100*100
+3.24	1000	10*10
+0.09	100	10*10
+![image](https://github.com/oliolioli/SpeedUpCollisionDetection-through-HashTables/assets/4264535/2c733d77-25c6-4008-9286-73e9dd36e442)
