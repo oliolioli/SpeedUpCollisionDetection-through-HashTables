@@ -13,10 +13,10 @@ the immediate neighbouring cells. The neighbouring cells must be tested because 
 
 ## Speed test & conclusion ##
 
-Timer per simulation step [ms]	Anzahl Partikel	Grösse der Hashtabelle [x*y]
-~6	1000	- Originalimplementation, ohne Hashtabelle -
+Timer / simulation step [ms]	# Particles	Size of hash table [x*y]
+ca 6	1000	- Initial implementation, without hash table -
 0.31	1000	100*100
 1.28	100	100*100
 3.24	1000	10*10
 0.09	100	10*10
-![image](https://github.com/oliolioli/SpeedUpCollisionDetection-through-HashTables/assets/4264535/2c733d77-25c6-4008-9286-73e9dd36e442)
+
