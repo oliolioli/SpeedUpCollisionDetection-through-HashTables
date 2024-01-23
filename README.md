@@ -7,12 +7,16 @@ particles are deflected according to a simple model. The simulation takes place 
 
 A **naive implementation** of collision detection **checks each pair of particles for a possible collision**. The cost of **collision detection is therefore O(n^2)** , where n is the number of particles. With a larger number of particles, the effort required to calculate each step in the simulation is quickly dominated by the collision detection.
 
-## Making it a lot faster with hash tables ##
 
+
+## Making it a lot faster with hash tables ##
 The idea is now to use a data structure that manages the particles according to their spatial position. Because the particles are randomly distributed in space, the **position of a particle can be used to calculate a hash value**. Given the x-coordinate of the particle in the range 0 ≤ x < w, the **hash value is h(x) = floor(xm/w)**, where m is the size of the hash table. A hash value can also be calculated for the y-coordinate. The two hash values can now be used as indices in a two-dimensional hash table.
 
 The **two-dimensional hash table corresponds to a two-dimensional grid**: each particle is assigned to a grid cell according to its position. This allows collision detection to be made more efficient by only analysing each particle for collisions in its own grid cell and the immediate neighbouring cells. The neighbouring cells must be tested because particles have a certain size and can overlap with the neighbouring cells. After each simulation step, the particles must be removed from the hash table according to their new position and re-entered in the correct cell.
 
+## Howto run the code ##
+Simply compile *.java and run BouncingBalls 
+(≥ openjdk-17.0.2)
 
 ## Speed test* & conclusion ##
 
