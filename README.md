@@ -15,6 +15,8 @@ The **two-dimensional hash table corresponds to a two-dimensional grid**: each p
 
 ## Speed test & conclusion ##
 
+Made on a 12year old Lenovo x201 with 8GB RAM.
+
 | Timer / simulation step [ms]     | # Particles | Size of hash table [x*y] |
 | ------- | -------------- | ---------------------------------------------- |
 | ~6      | 1000           | Initial implementation, without hash table     |
