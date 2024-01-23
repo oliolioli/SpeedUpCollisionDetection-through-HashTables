@@ -1,5 +1,4 @@
 # Speed up particle collision detection through hash tables #
-Speed up particle collision detection significantly by hashing their spatial position.
 
 ## General problem ##
 A simple particle simulation simulates a **set of particles that move freely in two-dimensional space until they collide with another particle** or with the environment. In the event of a collision
