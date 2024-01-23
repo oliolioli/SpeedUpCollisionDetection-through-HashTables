@@ -1,4 +1,4 @@
-# SpeedUpCollisionDetection-through-HashTables
+# Speed up particle collision detection through hash tables #
 
 A simple particle simulation simulates a set of particles that move freely in two-dimensional space until they collide with another particle or with the environment. In the event of a collision
 particles are deflected according to a simple model. The simulation takes place over discrete time steps. In each step, the particles are moved further according to their velocity, and in the case of collisions collisions, the new speed and direction are also calculated.
