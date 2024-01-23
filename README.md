@@ -13,6 +13,11 @@ the immediate neighbouring cells. The neighbouring cells must be tested because 
 
 ## Speed test & conclusion ##
 
+| Timer / simulation step [ms]     | # Particles | Size of hash table [x*y] |
+| ----------- | ----------- | ----------- |
+| Header      | Title       | Title       |
+| Paragraph   | Text        | Text        |
+
 Timer / simulation step [ms]	# Particles	Size of hash table [x*y]
 ca 6	1000	- Initial implementation, without hash table -
 0.31	1000	100*100
