@@ -13,7 +13,7 @@ The idea is now to use a data structure that manages the particles according to 
 
 The **two-dimensional hash table corresponds to a two-dimensional grid**: each particle is assigned to a grid cell according to its position. This allows collision detection to be made more efficient by only analysing each particle for collisions in its own grid cell and the immediate neighbouring cells. The neighbouring cells must be tested because particles have a certain size and can overlap with the neighbouring cells. After each simulation step, the particles must be removed from the hash table according to their new position and re-entered in the correct cell.
 
-## Howto run the code ##
+## How to run the code ##
 Simply compile *.java and run BouncingBalls 
 (≥ openjdk-17.0.2)
 
