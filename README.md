@@ -7,6 +7,7 @@ particles are deflected according to a simple model. The simulation takes place 
 A **naive implementation** of collision detection **checks each pair of particles for a possible collision**. The cost of **collision detection is therefore O(n^2)** , where n is the number of particles. With a larger number of particles, the effort required to calculate each step in the simulation is quickly dominated by the collision detection.
 
 ![Screenshot of particle collision detection in action](https://github.com/oliolioli/SpeedUpCollisionDetection-through-HashTables/blob/main/bouncing.png)
+
 Moving particles, collision detection with hash tables.
 
 ## Making collision detection a lot faster with hash tables ##
