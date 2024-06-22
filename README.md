@@ -8,7 +8,8 @@ A **naive implementation** of collision detection **checks each pair of particle
 
 ![Screenshot of particle collision detection in action](https://github.com/oliolioli/SpeedUpCollisionDetection-through-HashTables/blob/main/bouncing.png)
 
-Moving particles, collision detection with hash tables.
+_Moving particles, collision detection with hash tables._
+
 
 ## Making collision detection a lot faster with hash tables ##
 The idea is now to use a data structure that manages the particles according to their spatial position. Because the particles are randomly distributed in space, the **position of a particle can be used to calculate a hash value**. Given the x-coordinate of the particle in the range 0 ≤ x < w, the **hash value is h(x) = floor(xm/w)**, where m is the size of the hash table. A hash value can also be calculated for the y-coordinate. The two hash values can now be used as indices in a two-dimensional hash table.
