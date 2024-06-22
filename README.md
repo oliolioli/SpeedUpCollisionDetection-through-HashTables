@@ -32,4 +32,4 @@ Distributing the particles as evenly as possible across the hash table leads to 
 Approximately one particle per bucket is probably an ideal size (c). Hash tables that are too small lead to lists that have to be iterated.
 We see a hash table that is too small in measurement / setting (b) and a hash table that is too large in measurement / setting (c)
 
-*Made on a 12 year old Lenovo x201 with 8GB RAM.
+_*Made on a 12 year old Lenovo x201 with 8GB RAM._
